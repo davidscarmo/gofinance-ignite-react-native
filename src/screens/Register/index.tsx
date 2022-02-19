@@ -76,6 +76,7 @@ export function Register() {
       transactionType,
       category: category.key,
     };
+    console.log(data)
   }
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>

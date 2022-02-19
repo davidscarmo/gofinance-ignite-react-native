@@ -9,6 +9,7 @@ import {
   Header,
   HighlightCards,
   Icon,
+  LogoutButton,
   Photo,
   Title,
   Transactions,
@@ -66,7 +67,9 @@ export function Dashboard() {
               <UserName>David</UserName>
             </User>
           </UserInfo>
-          <Icon name="power" />
+          <LogoutButton onPress={() => {}}>
+            <Icon name="power" />
+          </LogoutButton>
         </UserWrapper>
       </Header>
       <HighlightCards>
@@ -93,7 +96,7 @@ export function Dashboard() {
         <Title> Listagem </Title>
         <TransactionsList
           data={data}
-          keyExtractor={item => item.id}
+          keyExtractor={(item) => item.id}
           renderItem={({ item }) => <TransactionCard data={item} />}
         />
       </Transactions>

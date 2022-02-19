@@ -5,6 +5,7 @@ import styled from "styled-components/native";
 import { TouchableOpacityProps } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
 
+// discover how to use rectbutton, doesn't work properly
 export const Container = styled.TouchableOpacity.attrs({
   activeOpacity: 0.7,
 })<TouchableOpacityProps>`
